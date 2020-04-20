@@ -5,12 +5,6 @@ pipeline{
     }
     agent any
     stages{
-        stage('Checkout'){
-            steps{
-               git 'https://github.com/venkatgit7/devops.git'  
-            }
-           
-        }
         stage('Compile'){
             steps {
             sh 'mvn compile'
